@@ -1,0 +1,15 @@
+[package]
+name = "ritehash"
+version = "0.1.0"
+description = "A tiny, fast, zero-dep and no_std fxhash fork. More up to date."
+documentation = "https://docs.rs/ritehash"
+repository = "https://github.com/ritelabs/ritehash"
+readme = "README.md"
+keywords = [ "hash", "no_std", "fxhash" ]
+categories = [ "algorithms", "no-std" ]
+license = "Apache-2.0 OR MIT"
+authors = ["RiteLabs"]
+
+[dev-dependencies]
+seahash = "4"
+fnv = "1"
