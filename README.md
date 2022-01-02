@@ -32,7 +32,7 @@ hashmap.insert("white", 255);
 Building an Fx backed hashset.
 
 ```rust
-pub type FxHashSet<K, V> = HashSet<K, V, FxBuildHasher>;
+pub type FxHashSet<V> = HashSet<V, FxBuildHasher>;
 
 let mut hashset = FxHashSet::default();
 
