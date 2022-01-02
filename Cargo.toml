@@ -9,6 +9,7 @@ keywords = [ "hash", "no_std", "fxhash" ]
 categories = [ "algorithms", "no-std" ]
 license = "Apache-2.0 OR MIT"
 authors = ["RiteLabs"]
+edition = "2021"
 
 [dev-dependencies]
 seahash = "4"

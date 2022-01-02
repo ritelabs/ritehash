@@ -131,16 +131,9 @@ fn write(hash: usize, bytes: &[u8]) -> usize {
 ///
 /// This hashing algorithm should not be used for cryptographic, or in scenarios where
 /// DOS attacks are a concern.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FxHasher {
     hash: usize,
-}
-
-impl Default for FxHasher {
-    #[inline]
-    fn default() -> FxHasher {
-        FxHasher { hash: 0 }
-    }
 }
 
 impl Hasher for FxHasher {
@@ -195,16 +188,9 @@ impl Hasher for FxHasher {
 ///
 /// This hashing algorithm should not be used for cryptographic, or in scenarios where
 /// DOS attacks are a concern.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FxHasher64 {
     hash: u64,
-}
-
-impl Default for FxHasher64 {
-    #[inline]
-    fn default() -> FxHasher64 {
-        FxHasher64 { hash: 0 }
-    }
 }
 
 impl Hasher for FxHasher64 {
@@ -250,16 +236,9 @@ impl Hasher for FxHasher64 {
 ///
 /// This hashing algorithm should not be used for cryptographic, or in scenarios where
 /// DOS attacks are a concern.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct FxHasher32 {
     hash: u32,
-}
-
-impl Default for FxHasher32 {
-    #[inline]
-    fn default() -> FxHasher32 {
-        FxHasher32 { hash: 0 }
-    }
 }
 
 impl Hasher for FxHasher32 {
