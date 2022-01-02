@@ -1,6 +1,6 @@
 [package]
 name = "ritehash"
-version = "0.1.0"
+version = "0.2.0"
 description = "A tiny, fast, zero-dep and no_std fxhash fork. More up to date."
 documentation = "https://docs.rs/ritehash"
 repository = "https://github.com/ritelabs/ritehash"
